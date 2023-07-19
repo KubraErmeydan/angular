@@ -1,0 +1,139 @@
+h2{
+    margin-top:20px ;
+}
+.section{
+    color: white;
+    width: 100%;
+    margin-left: 15px;   
+    margin-bottom: 15px; 
+}
+
+.row1{padding-top: 20px;
+    background-color: #29313A;
+    height: 170px;
+    width: 650px;
+    position:relative;
+    border-radius: 20px;
+    text-align: left;
+    display: flex;   
+    margin-bottom: 10px;
+}
+ul{
+    margin-top: 40px;
+    position: absolute;
+    
+}
+li{
+    list-style-type: circle;    
+}
+
+.row1 img{
+    position: absolute;
+    height: 160px;
+    margin-left: 400px;
+    margin-bottom:10px;
+    display: flex;
+    
+}
+
+
+
+
+
+
+.row-r1{
+    background-color: #FF007C;
+    height: 170px;
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 35px;
+}
+
+.col-c21{
+    height: 120px;
+    background-color: #2D62ED;
+    border-radius: 20px;  
+    width: 40%;  
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.col-c22{
+    padding-top: 10px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #7D00B5;
+    width: 40%;
+    margin-top: 10px;
+    margin-left: auto;
+}
+.row-r3{
+    margin: 10px;
+    height: 210px;
+    width: 100%;
+    background-color: #29313A;
+    border-radius: 20px;
+}
+
+
+
+
+
+.row-r21{
+border-radius: 20px;
+background-color: #29313A;
+height: 165px;
+width: 350px;
+margin-bottom: 10px;
+margin-left: 0px;
+padding-top: 10px;
+margin-right: -15px;
+}
+.line{
+    height:150px;
+    width: 260;
+    box-shadow: RGBA(39,45,59,0.2 );
+}
+
+
+
+.row-r22{
+border-radius: 20px;
+background-color: #29313A;
+height: 165px;
+width: 350px;
+margin-bottom: 10px;
+}
+
+
+
+.row-m1{
+    height: 170px;
+    width: 270px;
+    border-radius: 20px;
+    background-color: #29313A;
+    margin-left: 270px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.row-m2{
+    height: 50px;
+    width: 270px;
+    border-radius: 20px;
+    background-color: #29313A;
+    margin-left: 270px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.row-m3{
+    height: 100px;
+    width: 270px;
+    border-radius: 20px;
+    background-color: #29313A;
+    margin-left: 270px;
+
+}

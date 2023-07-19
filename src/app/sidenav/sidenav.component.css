@@ -1,0 +1,21 @@
+mat-icon{
+    font-size:28px;
+    margin-top: 10px;
+    color: white;
+}
+mat-nav-list{
+    margin-top: 60px;
+    margin-bottom: 180px;
+}
+i{
+    font-size:28px;
+    color:white;
+}
+
+.col img{   
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    
+}
