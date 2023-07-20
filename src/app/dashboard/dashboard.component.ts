@@ -12,7 +12,8 @@ import {
   ApexDataLabels,
   ApexTitleSubtitle,
   ApexStroke,
-  ApexGrid
+  ApexGrid,
+  
 } from "ng-apexcharts";
 
 export type ChartOptions = {
@@ -34,7 +35,7 @@ export type ChartOptions = {
   styleUrls: ['./dashboard.component.css'],
   
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
   
   
   color: ThemePalette= 'primary';
@@ -56,58 +57,67 @@ export class DashboardComponent implements OnInit {
   //   ]
   // });
 
-    @ViewChild('chart') chart: ChartComponent = {} as ChartComponent;
-    public chartOptions: Partial<any> = {} as Partial<any>;
+  @ViewChild("chart") chart: ChartComponent;
+  public chartOptions: Partial<ChartOptions | any>;
   
-    constructor(){
-
-    }
-    ngOnInit() {
-      this.chartOptions = {
-        series: [
-          {
-            name: "balance",
-            data: [100,150,125,115,165,99,115,99,210,200]
-          }
-        ],
-        chart: {
-          height: 250,
-          type: "line",
-          zoom: {
-            enabled: false
-          }
-        },
-        dataLabels: {
+  constructor() {
+    this.chartOptions = {
+      series: [
+        {
+          data: [100,150,125,115,165,99,115,99,210,200]       
+        } 
+      ],
+      chart: {
+        height: 150,
+        type: "line",
+        zoom: {
           enabled: false
-        },
-        stroke: {
-          curve: "straight"
-        },
-        title: {
-          text: "Card Balance",
-          align: "left"
-        },
-        grid: {
-          row: {
-            colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
-            opacity: 0.5
-          }
-        },
-        xaxis: {
-          categories: [
-            "9/19",
-            "10/19",
-            "11/19",
-            "12/19",
-            "1/19",
-            "2/19",
-            "3/19",
-            "4/19",
-            "5/19",
-            
-          ]
         }
-      };
+      },
+      dataLabels: {
+        enabled: false,
+        
+      },
+      
+      stroke: {
+        curve: "straight"
+      },
+      grid: 
+      {
+        row: {
+          colors: [ "transparent"],
+           // takes an array which will be repeated on columns
+          opacity: 1,
+          
+        }
+      },
+      xaxis: {             
+        categories: [
+          "9/19",
+          "10/19",
+          "11/19",
+          "12/19",
+          "1/19",
+          "2/19",
+          "3/19",
+          "4/19",
+          "5/19"
+        ],axisTicks: {
+          show: true
+        },
+        
+  tooltip: {
+    shared: false,
+    intersect: true,
+    y: {
+      show: false
     }
+  },
+  legend: {
+    horizontalAlign: "top",
+    offsetX: 40
   }
-
+      }
+    };
+  }
+}

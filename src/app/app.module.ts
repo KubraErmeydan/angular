@@ -19,6 +19,7 @@ import { ActivityComponent } from './activity/activity.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ChartModule } from 'angular-highcharts';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 
     MatProgressSpinnerModule,
     ChartModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

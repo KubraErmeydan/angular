@@ -19,8 +19,8 @@
             <div class="row align-items-around">
                 <!-- burada kısım card balance ve statistics -->
                 <div class="col-2">
-                    <div class="row row-r21">
-                        <div class="row justify-content-between">
+                    <div class="row row-r21 ">
+                        <div class="row " style="margin-bottom: 0px;">
                             <div class="col" >                            
                                 <b><span>$9.564</span></b>
                                 <p>Card Balance</p>
@@ -29,14 +29,15 @@
                                 <img src="../../assets/images/icon.png" alt="icon">
                             </div>
                         </div>
-                        <div class="row">
-                            
-                            <!-- <div id="chart">
+                        <div class="row "  style="height:100px; width: 150px; ">                            
+                            <div id="chart " >
                                 <apx-chart
-                                [chart]="chartOptions.chart"
-                                style="height: 250px; width: 160px;"
-                                ></apx-chart>
-                              </div> -->
+                                [series]="chartOptions['series']"
+                                [chart]="chartOptions['chart']"
+                                [xaxis]="chartOptions['xaxis']"                                
+                                [dataLabels]="chartOptions['dataLabels']" 
+                              ></apx-chart>
+                              </div>
                         </div>                    
 
                         
@@ -69,16 +70,32 @@
                                 <i class='fas fa-ellipsis-v' style='font-size:24px;color:white'></i>
                             </div>
                         </div>
+                        <div class="row">
+                            <div id="bar">
+                                <!-- <apx-chart
+                                  [series]="barOptions.series"
+                                  [chart]="barOptions.chart"
+                                  [yaxis]="barOptions.yaxis"
+                                  [xaxis]="barOptions.xaxis"
+                                  [labels]="barOptions.labels"
+                                  [stroke]="barOptions.stroke"
+                                  [title]="barOptions.title"
+                                  [dataLabels]="barOptions.dataLabels"
+                                  [fill]="barOptions.fill"
+                                  [tooltip]="barOptions.tooltip"
+                                ></apx-chart> -->
+                              </div>
+                        </div>
 
                     </div>
                     <div class="row-m2">
-                        <div class="row">
-                            <div class="col">
-                                <span><b>342.6K</b></span>
-                                <p style="font-size: 8pt;">Successfuly Completed</p>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col-8">
+                                <span><b>342.6K</b></span> <br>
+                                <span style="font-size: 8pt;">Successfuly Completed</span>
                             </div>
-                            <div class="col">
-                                <i class='far fa-arrow-alt-circle-right' style='font-size:48px;color:blue'></i>
+                            <div class="col-4 " style="padding-top: 5px;">
+                                <i class='far fa-arrow-alt-circle-right' style=' font-size:28px;color:white; background-color: #00CCF2; border-radius: 50px;'></i>
                             </div>
                         </div>
 
@@ -124,15 +141,15 @@
                             <div class="col col-c21">
 
                                 <img src="../../assets/images/clone_icon.png" alt="">
-                                <b><span>2.8K</span></b>
-                                <p>Monthly</p>
+                                <b><p>2.8K</p></b>
+                                <span>Monthly</span> <br>
                                  <span>Invoices</span>
                                 <i class='far fa-arrow-alt-circle-right' style='font-size:24px;background-color:  #789af3; position: absolute; border-radius: 50px;'></i>
                             </div>
                             <div class="col col-c22">
                                 <img src="../../assets/images/download_icon.png" alt="">
-                                <b><span>41.7K</span></b>
-                                <p>Monthly</p>
+                                <b><p>41.7K</p></b>
+                                <span>Monthly</span> <br>
                                 <span>Downloads</span>
                                 <i class='far fa-arrow-alt-circle-right' style='font-size:24px;background-color: #ba58e6;position: absolute; border-radius: 50px;'></i>
 
