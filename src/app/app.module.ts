@@ -20,6 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ChartModule } from 'angular-highcharts';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { NgChartsModule } from 'ng2-charts';
+import { CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { NgChartsModule } from 'ng2-charts';
     MatProgressSpinnerModule,
     ChartModule,
     NgApexchartsModule,
-    NgChartsModule
+    NgChartsModule,
+    CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
